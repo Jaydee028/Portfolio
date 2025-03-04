@@ -27,42 +27,42 @@
 </template>
 <script setup>
 import { ref } from 'vue';
-import a1 from '@/assets/a1.png';
+//import a1 from '@/assets/a1.png';
 const services = ref([
     {
         id: 1,
-        // icon: 'https://img.icons8.com/ios-filled/100/ffffff/google-code.png',
-        icon: a1,
+        icon: '/image/a1.png',
+        // icon: a1,
         name: 'Data and Marketing Analytics',
         description: 'Empower your business with data-driven decision-making. I provide detailed data and marketing analysis to uncover actionable insights, optimize strategies, and enhance performance metrics, ensuring your goals are achieved efficiently.'
     },
     {
         id: 2,
-        icon: 'https://img.icons8.com/external-vectorslab-glyph-vectorslab/100/fffeee/external-Technical-Writing-mobile-app-development-vectorslab-glyph-vectorslab.png',
+        icon: '/image/a2.png',
         name: 'Back-End Development Solutions',
         description: 'Build a solid foundation for your applications with secure, scalable, and high-performing back-end solutions. I specialize in server-side logic, API development, and database integration, ensuring your systems run smoothly and effectively.'
     },
     {
         id: 3,
-        icon: 'https://img.icons8.com/external-solid-design-circle/100/ffffff/external-Mobile-Development-digital-marketing-solid-design-circle.png',
+        icon: '/image/a3.png',
         name: 'SQL Database Design and Management',
         description: 'Streamline your data operations with professionally managed and designed SQL databases. I focus on creating optimized database structures and writing efficient SQL queries to improve data accessibility, speed, and security, tailored to your unique requirements.'
     },
     {
         id: 4,
-        icon: 'https://img.icons8.com/ios-filled/100/ffffff/email-open.png',
+        icon: '/image/a4.png',
         name: 'Advanced Excel and VBA Automation',
         description: 'Eliminate repetitive tasks and boost productivity with custom Excel solutions. I develop advanced functions and VBA tools to automate workflows, create dynamic reports, and provide insights in an easy-to-use format, saving you time and resources.'
     },
     {
         id: 5,
-        icon: 'https://img.icons8.com/ios-filled/100/ffffff/windows10-personalization.png',
+        icon: '/image/a5.png',
         name: 'System Analysis and Optimization',
         description: 'Optimize your processes with comprehensive system analysis. I evaluate existing systems, identify inefficiencies, and design solutions that align with your goals, ensuring seamless integration and improved productivity.'
     },
     {
         id: 6,
-        icon: 'https://img.icons8.com/ios-filled/100/ffffff/web-design.png',
+        icon: '/image/a6.png',
         name: 'Custom Software Development',
         description: 'Turn your vision into reality with custom software solutions. I deliver intuitive, scalable, and reliable software tailored to your business needs, ensuring high performance and user satisfaction from concept to completion.'
     },

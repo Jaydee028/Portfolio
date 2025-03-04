@@ -135,7 +135,7 @@ const Projects = ref([
   {
     id: 1,
     category: ['Web Development', 'Mobile App'],
-    images: ['src/assets/pestmon1.png', 'src/assets/pestmon2.png', 'src/assets/pestmon3.png', 'src/assets/pestmon4.png', 'src/assets/pestmon5.png', 'src/assets/pestmon6.png', 'src/assets/pestmon7.png', 'src/assets/pestmon8.jpg', 'src/assets/pestmon9.jpg'],
+    images: ['/image/pestmon1.png', '/image/pestmon2.png', '/image/pestmon3.png', '/image/pestmon4.png', '/image/pestmon5.png', '/image/pestmon6.png', '/image/pestmon7.png', '/image/pestmon8.jpg', '/image/pestmon9.jpg'],
     title: 'PestMon Mobile and Web Application',
     description: '<p class="indent-8">Pests and diseases (P&D) pose a significant threat to banana farming, leading to major losses in both yield and quality globally.</p> <p class="indent-8 mt-1">Traditional methods, such as paper-based case recording, often result in missed treatments, duplicated efforts, and delayed responses, making it difficult to manage outbreaks effectively.</p><p class="indent-8 mt-1">To solve these issues, I developed an innovative system at TADECO that includes a mobile app for real-time P&D case recording and treatment tracking, along with a web app for QR code management for P&D Cases, laboratory test requests, and graphical reports with geotagging and a spatial map to visualize the severity of P&D cases across farms, from no cases to high severity.</p><p class="indent-8 mt-1">The system also features advanced forecasting powered by a Long Short-Term Memory (LSTM) model, which accurately predicts potential outbreaks. This solution streamlines reporting, reduces errors, and ensures timely treatments, helping TADECO’s farmers protect their crops and boost productivity.</p>',
     technologies: ['HighCharts', 'OpenStreetMap', 'Vanilla JS', 'PHP', 'SQL', 'Express', 'Forecasting', 'Flutter'],
@@ -145,7 +145,7 @@ const Projects = ref([
   {
     id: 2,
     category: ['Web Development'],
-    images: ['src/assets/AIS3.jpeg', 'src/assets/AIS4.jpeg', 'src/assets/AIS1.jpeg', 'src/assets/AIS2.jpeg'],
+    images: ['/image/AIS3.jpeg', '/image/AIS4.jpeg', '/image/AIS1.jpeg', '/image/AIS2.jpeg'],
     title: 'Agricultural Information System',
     description: '<p class="indent-8">The Agriculture Information System (AIS) is a user-friendly web application developed in collaboration with my colleagues at TADECO to support banana plantations in achieving optimal productivity.</p><p class="indent-8 mt-1"> AIS simplifies the management of key aspects of banana production, from planting to box preparation, by providing clear and detailed monitoring and reporting tools.</p><p class="indent-8 mt-1"> It integrates data on banana health, weather conditions, and other critical parameters, presenting them through intuitive graphical and tabular visualizations that cover the entire 6,200-hectare area of TADECO’s plantation.</p><p class="indent-8 mt-1"> These features empower TADECO’s decision-makers to make informed, data-driven decisions to effectively address challenges like fusarium wilt, sigatoka, field loss causes, and fruit waste—issues that have significantly impacted yields and caused the closure of many plantations across the Philippines.</p><p class="indent-8 mt-1"> By addressing these challenges head-on, AIS has enabled TADECO to streamline reporting, reduce losses, and sustain its position as a leading global exporter in the banana industry, demonstrating its vital role in overcoming production obstacles and ensuring long-term success.',
     technologies: ['HighCharts', 'Vanilla JS', 'PHP', 'SQL'],
@@ -155,7 +155,7 @@ const Projects = ref([
   {
     id: 3,
     category: ['Web Development'],
-    images: ['src/assets/GIS1.jpeg', 'src/assets/GIS2.jpeg'],
+    images: ['/image/GIS1.jpeg', '/image/GIS2.jpeg'],
     title: 'GeoGraphical Information System',
     description: '<p class="indent-8">The Geographical Information System (GIS) is an advanced web application developed in collaboration with my colleagues at TADECO to improve the management of banana plantations through precise geospatial data analysis.</p><p class="indent-8 mt-1"> GIS provides a detailed map of TADECO’s plantation and its extensions, showing the spatial layout of the lots that make up the entire area.</p><p class="indent-8 mt-1"> The system displays real-time data on the status of these lots based on selected parameters, helping decision-makers monitor plantation conditions, track interventions, and allocate resources effectively.</p><p class="indent-8 mt-1"> By addressing critical challenges like Fusarium wilt, Sigatoka, and field losses, GIS has played a key role in enhancing operational efficiency, minimizing losses, and supporting TADECO"s leadership in the global banana industry.</p><p class="indent-8 mt-1"> This tool is essential for overcoming geographical and operational challenges, ensuring sustainable plantation management, and driving long-term success.',
     technologies: ['HighCharts', 'SVG', 'Vanilla JS', 'PHP', 'SQL'],
@@ -165,7 +165,7 @@ const Projects = ref([
   {
     id: 4,
     category: ['Excel VBA'],
-    images: ['src/assets/DataEntry1.jpeg', 'src/assets/DataEntry2.jpeg', 'src/assets/DataEntry3.jpeg'],
+    images: ['/image/DataEntry1.jpeg', '/image/DataEntry2.jpeg', '/image/DataEntry3.jpeg'],
     title: 'Excel Data Entries',
     description: '<p class="indent-8">I created Excel Data Entry Tools designed to manage over 15 distinct parameters involved in banana production, covering every stage from planting to packing. Each tool is specifically developed for a single parameter, ensuring precise and efficient data input. Built with VBA (Visual Basic for Applications), these tools enable accurate data collection even in offline environments—a crucial advantage in agricultural settings where internet access can often be unreliable. The sample image highlights a selection of the templates, showcasing their user-friendly layout and functionality tailored to the needs of agricultural operations.</p><p class="indent-8 mt-1">Each template is uniquely designed to align with its respective parameter, offering a standardized and efficient way to record critical information. Several of the tools also include reports customized based on client requirements, providing actionable insights for decision-making. By integrating SQL queries, the tools ensure data validation, allow seamless CSV exports, and support quick updates to the database. Unlike web or desktop applications that rely heavily on stable network connections or require frequent updates, these Excel-based solutions are easy to implement and adapt, making them an ideal choice for TADECO’s operations. They reduce repetitive tasks, improve data accuracy, and significantly enhance productivity.</p><p class="indent-8 mt-1">These tools have enabled TADECO to make well-informed, data-driven decisions while maintaining the highest standards in banana production. This project reflects my dedication to providing innovative and practical solutions that optimize workflows and drive measurable success.</p>',
     technologies: ['Excel', 'Visual Basic App', 'SQL'],
@@ -175,7 +175,7 @@ const Projects = ref([
   {
     id: 5,
     category: ['Excel VBA'],
-    images: ['src/assets/ExcelThematicMap1.jpeg', 'src/assets/ExcelThematicMap2.jpeg'],
+    images: ['/image/ExcelThematicMap1.jpeg', '/image/ExcelThematicMap2.jpeg'],
     title: 'Excel Thematic Map',
     description: '<p class="indent-8">I created an Excel Thematic Map Tool designed to display the spatial distribution and variations of specific variables across banana plantations. This tool enables users to track and analyze key parameters, such as harvest ranges per parcela, and other important agricultural metrics. It features a customizable legend that allows users to adjust settings based on their needs, making it easier to interpret data from different perspectives.</p> <p class="indent-8 mt-1">Using Visual Basic for Applications (VBA), the tool automatically colors map areas based on the selected data, offering a clear and visually intuitive representation of spatial trends. This functionality helps users quickly identify patterns and make informed decisions to improve plantation management. The Excel Thematic Map Tool delivers a straightforward yet highly effective way to visualize complex agricultural data.</p> <p class="indent-8 mt-1">By bringing geographic data analysis directly into Excel, this tool eliminates the need for specialized software, making spatial insights more accessible. It bridges the gap between standard spreadsheet functionality and advanced mapping capabilities, allowing stakeholders to interpret critical information more effectively and optimize productivity across the plantation.</p>',
     technologies: ['Excel', 'Visual Basic App', 'SQL'],

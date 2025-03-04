@@ -1,17 +1,19 @@
 <template>
     <header
         class="flex justify-between items-center px-6 py-2 fixed top-0 left-0 w-full z-50 bg-[#111827] border-b-2 border-yellow-500">
-        <!-- <div class="text-white text-2xl md:text-3xl font-bold">#CodeJungler</div> -->
-        <img class="h-10 w-[11em]" src="../assets/Logo3.png" alt="menu">
+        <div class="text-white text-xl md:text-2xl font-poppins pt-1">
+            JESSE DAN P BANCALE
+        </div>
+
+        <!-- <img class="h-10 w-[11em]" src="/image/Logo3.png" alt="menu"> -->
         <!-- Mobile Toggle Button -->
         <div class="md:hidden z-30">
             <button type="button" class="block focus:outline-hidden" @click="isMenuOpen = !isMenuOpen">
                 <span v-if="isMenuOpen" class="text-5xl">
-                    <img src="https://img.icons8.com/ios-filled/100/ffffff/delete-sign.png" alt="close" width="50"
-                        height="50">
+                    <img src="/image/delete-sign.png" alt="close" width="50" height="50">
                 </span>
                 <span v-else class="text-5xl">
-                    <img src="https://img.icons8.com/ios-filled/100/ffffff/menu--v6.png" alt="menu" width="50" height="50">
+                    <img src="/image/menu--v6.png" alt="menu" width="50" height="50">
                 </span>
             </button>
         </div>

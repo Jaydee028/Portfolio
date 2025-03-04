@@ -51,7 +51,7 @@
                         <div class="ml-5 text-white">
                             <h4>LinkedIn</h4>
                             <p><a href="https://www.linkedin.com/in/jesse-dan-bancale-276971188/"
-                                    target="_blank">linkedin.com/in/jesse-dan-bancale-276971188/</a></p>
+                                    target="_blank" class="text-xl underline decoration-[-1px] underline-offset-6">Jesse Dan Bancale</a></p>
                         </div>
                     </div>
                 </div>

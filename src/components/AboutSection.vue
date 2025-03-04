@@ -8,12 +8,12 @@
                 <h2 class="text-4xl font-bold text-white text-left mb-2">My Education</h2>
                 <div class="space-y-8 py-8">
                     <div v-for="element in education" :key="element.id"
-                        class="flex items-center md:w-[90%] w-full py-2 rounded-xl bg-[#111a3e] shadow-lg border border-[#1f1641]">
+                        class="flex items-center md:w-[90%] w-full py-2 rounded-xl bg-[#111a3e] shadow-lg border border-[#1f1641] pl-4">
                         <div class="w-[20%]">
-                            <img src="https://img.icons8.com/ios-glyphs/60/ffffff/graduation-cap--v1.png"
-                                alt="graduation-cap--v1" class="mx-auto">
+                            <img :src="element.logo" alt="graduation-cap--v1" class="mx-auto">
+                                <!-- https://img.icons8.com/ios-glyphs/60/ffffff/graduation-cap--v1.png -->
                         </div>
-                        <div class="w-[80%] pl-3">
+                        <div class="w-[80%] pl-4">
                             <h3
                                 class="text-2xl font-semibold uppercase text-transparent bg-clip-text bg-linear-to-r from-primary to-secondary lg:text-xl">
                                 {{ element.School }}
@@ -102,6 +102,7 @@ import { ref, computed } from 'vue';
 const education = ref([
     {
         id: 1,
+        logo: '/image/dnsc.png',
         program: 'Master in Information Technology',
         School: 'Davao del Norte State College',
         year: 'School Year: 2022-2024',
@@ -109,6 +110,7 @@ const education = ref([
     },
     {
         id: 2,
+        logo: '/image/usep.png',
         program: 'B.S. in Information Technology',
         School: 'University of Southeastern Philippines',
         year: 'School Year: 2016-2019',

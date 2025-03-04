@@ -7,7 +7,8 @@
         </div>
 
         <!-- Content -->
-        <div class="w-full px-5 sm:px-8 md:px-12 lg:px-10 max-w-(--breakpoint-lg) lg:max-w-(--breakpoint-xl) mx-auto relative">
+        <div
+            class="w-full px-5 sm:px-8 md:px-12 lg:px-10 max-w-(--breakpoint-lg) lg:max-w-(--breakpoint-xl) mx-auto relative">
             <div class="grid lg:grid-cols-2 gap-6 xl:gap-[2em] relative pt-24 lg:max-w-none md:max-w-xl mx-auto">
                 <!-- Text Section -->
                 <div class="lg:py-6">
@@ -24,14 +25,17 @@
                         insights.</p>
                     <p class="text-gray-200 text-justify lg:text-justify mx-auto max-w-xl lg:text-lg indent-8 mt-1">
                         As a key contributor to the <strong>development</strong> and <strong>maintenance</strong> of the
-                        <span class="text-blue-400 font-semibold">Agricultural and Geographical Information Systems</span>
-                        for the <strong>world-class quality <span class="text-green-500">banana industry</span></strong>,
+                        <span class="text-blue-400 font-semibold">Agricultural and Geographical Information
+                            Systems</span>
+                        for the <strong>world-class quality <span class="text-green-500">banana
+                                industry</span></strong>,
                         I’ve leveraged my skills in various technologies to create solutions that drive impactful
                         results.
                     </p>
                     <p class="text-gray-200 text-justify lg:text-justify mx-auto max-w-xl lg:text-lg indent-8 mt-1">
                         These tools, which feature <em>interactive maps and charts</em> for <strong>data
-                            visualization</strong>, have enhanced <strong>decision-making</strong> and delivered exceptional
+                            visualization</strong>, have enhanced <strong>decision-making</strong> and delivered
+                        exceptional
                         outcomes, such as improved banana harvests for global export.</p>
                     <p class="text-gray-200 text-justify lg:text-justify mx-auto max-w-xl lg:text-lg indent-8 mt-1">
                         If you’re looking for someone who combines <strong>technical expertise</strong> with a
@@ -73,7 +77,7 @@
                         </div>
                         <div
                             class="absolute h-full z-10 p-2 -translate-y-1/2 top-1/2 lg:right-10 md:right-[11rem] sm:right-16 rounded-full shadow-lg border border-primary">
-                            <img src="@/assets/top_picture.jpg" alt="Hero pic" width="500" height="auto" loading="lazy"
+                            <img src="/image/top_picture.jpg" alt="Hero pic" width="500" height="auto" loading="lazy"
                                 class="w-full h-full rounded-full object-cover">
                         </div>
                     </div>
