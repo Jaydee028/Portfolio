@@ -15,7 +15,7 @@
                         </div>
                         <div class="w-[80%] pl-4">
                             <h3
-                                class="text-2xl font-semibold uppercase text-transparent bg-clip-text bg-linear-to-r from-primary to-secondary lg:text-xl">
+                                class="text-2xl font-semibold uppercase text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary lg:text-xl">
                                 {{ element.School }}
                             </h3>
                             <p class="text-white font-bold">{{ element.program }}</p>
@@ -27,7 +27,7 @@
             </div>
             <div class="mt-4 md:mt-0 text-left flex flex-col z-10 h-full" data-aos="flip-right">
                 <h2 class="text-4xl font-bold text-white md:text-center text-left mb-0">More
-                    <span class="text-transparent bg-clip-text bg-linear-to-r from-primary to-secondary">About</span>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">About</span>
                     Me
                 </h2>
                 <p class="text-base text-justify lg:text-lg mt-8 indent-8">

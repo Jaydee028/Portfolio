@@ -1,7 +1,7 @@
 <template>
     <header
         class="flex justify-between items-center px-6 py-2 fixed top-0 left-0 w-full z-50 bg-[#111827] border-b-2 border-yellow-500">
-        <div class="text-white text-xl md:text-2xl font-poppins pt-1">
+        <div class="text-white text-xl md:text-2xl poppins-text pt-1">
             JESSE DAN P BANCALE
         </div>
 
@@ -75,5 +75,8 @@ const scrollToSection = (href) => {
 section {
     padding-top: 60px;
     /* Adjust based on your navbar height */
+}
+.poppins-text {
+  font-family: 'Poppins', sans-serif;
 }
 </style>

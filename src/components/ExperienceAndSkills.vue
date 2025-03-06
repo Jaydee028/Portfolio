@@ -15,7 +15,7 @@
                     <h2 class="text-4xl font-bold text-white text-left mb-4">
                         My
                         <span
-                            class="text-transparent bg-clip-text bg-linear-to-r from-primary to-secondary">Skills</span>
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Skills</span>
                     </h2>
                 </div>
 
@@ -53,7 +53,7 @@
                         </div>
                         <div class="w-3/4 pl-4">
                             <h3
-                                class="text-2xl font-semibold uppercase text-transparent bg-clip-text bg-linear-to-r from-primary to-secondary">
+                                class="text-2xl font-semibold uppercase text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
                                 {{ element.role }}
                             </h3>
                             <p class="text-white">{{ element.company }}</p>

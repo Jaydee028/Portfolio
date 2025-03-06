@@ -12,9 +12,11 @@
                         class="font-bold text-yellow-500">smarter decisions</span>?
                     Perhaps you're seeking advanced <span class="font-bold text-yellow-500">Excel automation</span> with
                     <span class="font-bold text-yellow-500">VBA</span> to streamline your workflow, or a skilled <span
-                        class="font-bold text-yellow-500">back-end developer</span> to power your applications? Or maybe you
+                        class="font-bold text-yellow-500">back-end developer</span> to power your applications? Or maybe
+                    you
                     need
-                    a <span class="font-bold text-yellow-500">SQL database expert</span> to manage and organize your data
+                    a <span class="font-bold text-yellow-500">SQL database expert</span> to manage and organize your
+                    data
                     efficiently? I’m here to help you tackle challenges, achieve your goals, and bring your <span
                         class="font-bold text-yellow-500">ideas to reality</span>. Let’s work together to make it
                     happen—<span class="text-yellow-500 font-bold">reach out today</span>!
@@ -24,7 +26,7 @@
                     <div class="flex mb-10 items-center">
                         <div
                             class="p-2 bg-[#111a3e] w-12 h-12 flex justify-center items-center rounded-full border-2 border-[#111a3e] backdrop-blur-lg">
-                            <img src="https://img.icons8.com/metro/50/ffffff/new-post.png" alt="new-post" class="w-6">
+                            <img src="/image/new-post.png" alt="new-post" class="w-6">
                         </div>
                         <div class="ml-5 text-white">
                             <h4>Email</h4>
@@ -32,7 +34,7 @@
                         </div>
                     </div>
 
-                    <div class="flex mb-10 items-center">
+                    <!-- <div class="flex mb-10 items-center">
                         <div
                             class="p-2 bg-[#111a3e] w-12 h-12 flex justify-center items-center rounded-full border-2 border-[#111a3e] backdrop-blur-lg">
                             <img src="https://img.icons8.com/ios-filled/50/ffffff/phone.png" alt="phone" class="w-6">
@@ -41,17 +43,18 @@
                             <h4>Phone</h4>
                             <p>+639169819865</p>
                         </div>
-                    </div>
+                    </div> -->
 
                     <div class="flex mb-10 items-center">
                         <div
                             class="p-2 bg-[#111a3e] w-12 h-12 flex justify-center items-center rounded-full border-2 border-[#111a3e] backdrop-blur-lg">
-                            <img src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png" alt="linkedin" class="w-6">
+                            <img src="/image/linkedin.png" alt="linkedin" class="w-6">
                         </div>
                         <div class="ml-5 text-white">
                             <h4>LinkedIn</h4>
-                            <p><a href="https://www.linkedin.com/in/jesse-dan-bancale-276971188/"
-                                    target="_blank" class="text-xl underline decoration-[-1px] underline-offset-6">Jesse Dan Bancale</a></p>
+                            <p><a href="https://www.linkedin.com/in/jesse-dan-bancale-276971188/" target="_blank"
+                                    class="text-xl underline decoration-[-1px] underline-offset-6">Jesse Dan Bancale</a>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -62,21 +65,21 @@
                 <form @submit.prevent="handleSubmit" class="flex flex-col p-4">
                     <div class="mb-6">
                         <label for="email" class="text-white block mb-2 text-sm font-medium">Email</label>
-                        <input v-model="form.email" type="email" id="email"
+                        <input v-model="email" type="email" id="email"
                             class="bg-[#111827] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
                             placeholder="email@gmail.com" required>
                     </div>
 
                     <div class="mb-6">
                         <label for="subject" class="text-white block mb-2 text-sm font-medium">Subject</label>
-                        <input v-model="form.subject" type="text" id="subject"
+                        <input v-model="subject" type="text" id="subject"
                             class="bg-[#111827] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
                             placeholder="Subject" required>
                     </div>
 
                     <div class="mb-6">
                         <label for="message" class="text-white block mb-2 text-sm font-medium">Message</label>
-                        <textarea v-model="form.message" id="message"
+                        <textarea v-model="message" id="message"
                             class="bg-[#111827] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
                             placeholder="Let's talk about..." required rows="6"></textarea>
                     </div>
@@ -94,47 +97,59 @@
         </div>
     </section>
 </template>
-  
+
 <script setup>
 import { ref } from 'vue';
 import emailjs from 'emailjs-com';
+import { useToast } from "vue-toastification";
+import "vue-toastification/dist/index.css";
 
-const form = ref({
-    email: '',
-    subject: '',
-    message: '',
-});
+const email = ref("");
+const subject = ref("");
+const message = ref("");
+const error = ref("");
+const successMessage = ref("");
+
+const toast = useToast();
 
 const handleSubmit = async () => {
-    const { email, subject, message } = form.value;
-
-    if (!email || !subject || !message) {
-        alert('Please fill out all fields.');
-        return;
-    }
-
     try {
-        const response = await emailjs.send(
-            'service_krkzn5s',   // Replace with your service ID
-            'template_r1v7yaa',  // Replace with your template ID
-            { email, subject, message },
-            'Ru8D2bGudHK91BnEz'       // Replace with your user ID
-        );
+        error.value = "";
+        successMessage.value = "";
 
-        alert('Message Sent!');
-        console.log(response);
+        if (!email.value || !subject.value || !message.value) {
+            error.value = "All fields are required.";
+            toast.error(error.value);
+            return;
+        }
 
-        // Reset form after submission
-        form.value.email = '';
-        form.value.subject = '';
-        form.value.message = '';
-    } catch (error) {
-        console.error('Error sending email:', error);
-        alert('Something went wrong, please try again later.');
+        const templateParams = {
+            from_email: email.value,
+            subject: subject.value,
+            message: message.value,
+        };
+
+        const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+        const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+        const userId = import.meta.env.VITE_EMAILJS_USER_ID;
+
+        await emailjs.send(serviceId, templateId, templateParams, userId);
+
+        successMessage.value = "Your message has been sent successfully!";
+        toast.success(successMessage.value);
+
+        email.value = "";
+        subject.value = "";
+        message.value = "";
+    } catch (err) {
+        error.value = "Failed to send the message. Please try again.";
+        toast.error(error.value);
+        console.error(err);
     }
 };
+
 </script>
-  
+
 <style scoped>
 p {
     font-size: 1.125rem;
