@@ -38,7 +38,8 @@
                     </p>
                     <p class="text-gray-200 text-justify mx-auto max-w-xl lg:text-lg indent-8 mt-1">
                         If you’re looking for someone who combines <strong>technical expertise</strong> with a
-                        passion for <span class="italic text-yellow-500">innovation</span>, let’s connect and explore how I can take
+                        passion for <span class="italic text-yellow-500">innovation</span>, let’s connect and explore how I
+                        can take
                         your projects to the next level.
                     </p>
 
@@ -62,7 +63,7 @@
                                         d="M1 17V18C1 18.7956 1.31607 19.5587 1.87868 20.1213C2.44129 20.6839 3.20435 21 4 21H14C14.7956 21 15.5587 20.6839 16.1213 20.1213C16.6839 19.5587 17 18.7956 17 18V17"
                                         stroke="#f59e0b" stroke-width="2" stroke-linecap="round" />
                                 </svg>
-                                <a href="/Bancale Resume.pdf" download="Bancale Resume.pdf"
+                                <a href="./Bancale Resume.pdf" download="Bancale Resume.pdf"
                                     class="pl-2 text-primary">Download Resume</a>
                             </div>
                         </button>
@@ -72,7 +73,8 @@
                 <!-- Image Section -->
                 <div class="lg:h-full md:flex">
                     <div class="flex w-full h-96 min-h-[24rem] lg:w-full lg:h-full items-center relative">
-                        <div class="absolute z-0 top-1/2 -translate-y-1/2 w-5/6 right-0 h-[calc(80%+20px)] bg-gradient-to-tr opacity-25 from-[#570cac] to-primary blur-2xl">
+                        <div
+                            class="absolute z-0 top-1/2 -translate-y-1/2 w-5/6 right-0 h-[calc(80%+20px)] bg-gradient-to-tr opacity-25 from-[#570cac] to-primary blur-2xl">
                         </div>
                         <div
                             class="absolute h-full z-10 p-2 -translate-y-1/2 top-1/2 lg:right-10 md:right-[11rem] sm:right-16 rounded-full shadow-lg border border-primary">
