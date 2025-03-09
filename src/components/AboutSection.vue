@@ -11,7 +11,7 @@
                         class="flex items-center md:w-[90%] w-full py-2 rounded-xl bg-[#111a3e] shadow-lg border border-[#1f1641] pl-4">
                         <div class="w-[20%]">
                             <img :src="element.logo" alt="graduation-cap--v1" class="mx-auto">
-                                <!-- https://img.icons8.com/ios-glyphs/60/ffffff/graduation-cap--v1.png -->
+                            <!-- https://img.icons8.com/ios-glyphs/60/ffffff/graduation-cap--v1.png -->
                         </div>
                         <div class="w-[80%] pl-4">
                             <h3
@@ -102,7 +102,7 @@ import { ref, computed } from 'vue';
 const education = ref([
     {
         id: 1,
-        logo: '/image/dnsc.png',
+        logo: './image/dnsc.png',
         program: 'Master in Information Technology',
         School: 'Davao del Norte State College',
         year: 'School Year: 2022-2024',
@@ -110,7 +110,7 @@ const education = ref([
     },
     {
         id: 2,
-        logo: '/image/usep.png',
+        logo: './image/usep.png',
         program: 'B.S. in Information Technology',
         School: 'University of Southeastern Philippines',
         year: 'School Year: 2016-2019',

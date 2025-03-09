@@ -31,38 +31,38 @@ import { ref } from 'vue';
 const services = ref([
     {
         id: 1,
-        icon: '/image/a1.png',
+        icon: './image/a1.png',
         // icon: a1,
         name: 'Data and Marketing Analytics',
         description: 'Empower your business with data-driven decision-making. I provide detailed data and marketing analysis to uncover actionable insights, optimize strategies, and enhance performance metrics, ensuring your goals are achieved efficiently.'
     },
     {
         id: 2,
-        icon: '/image/a2.png',
+        icon: './image/a2.png',
         name: 'Back-End Development Solutions',
         description: 'Build a solid foundation for your applications with secure, scalable, and high-performing back-end solutions. I specialize in server-side logic, API development, and database integration, ensuring your systems run smoothly and effectively.'
     },
     {
         id: 3,
-        icon: '/image/a3.png',
+        icon: './image/a3.png',
         name: 'SQL Database Design and Management',
         description: 'Streamline your data operations with professionally managed and designed SQL databases. I focus on creating optimized database structures and writing efficient SQL queries to improve data accessibility, speed, and security, tailored to your unique requirements.'
     },
     {
         id: 4,
-        icon: '/image/a4.png',
+        icon: './image/a4.png',
         name: 'Advanced Excel and VBA Automation',
         description: 'Eliminate repetitive tasks and boost productivity with custom Excel solutions. I develop advanced functions and VBA tools to automate workflows, create dynamic reports, and provide insights in an easy-to-use format, saving you time and resources.'
     },
     {
         id: 5,
-        icon: '/image/a5.png',
+        icon: './image/a5.png',
         name: 'System Analysis and Optimization',
         description: 'Optimize your processes with comprehensive system analysis. I evaluate existing systems, identify inefficiencies, and design solutions that align with your goals, ensuring seamless integration and improved productivity.'
     },
     {
         id: 6,
-        icon: '/image/a6.png',
+        icon: './image/a6.png',
         name: 'Custom Software Development',
         description: 'Turn your vision into reality with custom software solutions. I deliver intuitive, scalable, and reliable software tailored to your business needs, ensuring high performance and user satisfaction from concept to completion.'
     },
