@@ -122,9 +122,9 @@ const handleSubmit = async () => {
             toast.error(error.value);
             return;
         }
-
+        console.log(email.value);
         const templateParams = {
-            from_email: email.value,
+            email: email.value,
             subject: subject.value,
             message: message.value,
         };
