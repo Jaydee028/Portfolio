@@ -77,7 +77,7 @@
               <p class="text-white">{{ element.company }}</p>
               <p class="text-white">{{ element.date }}</p>
 
-              <ul class="list-disc pl-5 mt-3 text-sm text-gray-300 space-y-1">
+              <ul class="list-disc pl-5 mt-2 text-md text-gray-300 space-y-1">
                 <li v-for="(item, index) in element.summary" :key="index">
                   {{ item }}
                 </li>
