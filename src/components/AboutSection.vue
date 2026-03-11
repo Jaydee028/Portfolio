@@ -1,9 +1,9 @@
-<template >
+<template>
     <section class="text-white mt-0" id="about">
         <div class="absolute z-0 top-[130rem] inset-x-0 h-64 flex items-start">
             <div class="h-24 w-64 bg-linear-to-br from-primary via-secondary blur-2xl to-[#570cac] opacity-20"></div>
         </div>
-        <div class="md:grid md:grid-cols-2 gap-8 items-center py-2 px-4 xl:gap-10 sm:py-16 xl:px-16 z-1">
+        <div class="md:grid md:grid-cols-2 gap-8 items-center py-2 px-4 xl:gap-10 sm:pt-16 sm:pb-14 xl:pb-6 xl:px-16 z-1">
             <div data-aos="flip-right">
                 <h2 class="text-4xl font-bold text-white text-left mb-2">My Education</h2>
                 <div class="space-y-8 py-8">
@@ -38,7 +38,8 @@
                     embracing opportunities to grow both personally and professionally. -->
                     I am a dedicated professional with a passion for transforming complex data into decision-driven
                     insights. My analytical skills enable me to develop efficient solutions to challenging problems,
-                    ensuring clarity and impactful results. I am committed to continuous learning, staying updated on the
+                    ensuring clarity and impactful results. I am committed to continuous learning, staying updated on
+                    the
                     latest technological advancements, and embracing growth opportunities to enhance my expertise.
                 </p>
                 <p class="text-base text-justify lg:text-lg indent-8 mt-1">
@@ -51,7 +52,8 @@
                     Beyond my expertise in data analysis and programming, I thrive on tackling challenges, whether from
                     clients, friends, or family. Every problem is an opportunity to learn, grow, and refine my skills,
                     preparing me to handle similar tasks in the future. I
-                    value collaboration and am always open to discussions, ensuring solutions are tailored to your specific
+                    value collaboration and am always open to discussions, ensuring solutions are tailored to your
+                    specific
                     needs.
                 </p>
                 <p class="text-base text-justify lg:text-lg indent-8 mt-1">
@@ -61,9 +63,11 @@
                     for hands-on problem-solving and understanding how systems work—whether in technology or on two wheels.
                     My family serves as a source of inspiration and support, grounding me and motivating me to strive for
                     excellence in all aspects of my life. -->
-                    In my free time, I enjoy motorcycle rides through scenic mountain and coastal roads, immersing myself in
+                    In my free time, I enjoy motorcycle rides through scenic mountain and coastal roads, immersing
+                    myself in
                     nature’s beauty. My interest in repairing and maintaining my bike reflects my passion for hands-on
-                    problem-solving and understanding systems at their core. These traits, coupled with my family’s support,
+                    problem-solving and understanding systems at their core. These traits, coupled with my fiancé and 
+                    family’s support,
                     inspire me to excel in every aspect of my life.
                 </p>
                 <div class="flex flex-wrap justify-center gap-4 max-w-lg pt-8 mx-auto">
@@ -95,10 +99,48 @@
                 </div>
             </div>
         </div>
+        <!-- Carousel Gallery -->
+        <div class="mb-2 px-2 xl:px-5 z-1">
+            <Swiper :modules="[Autoplay, Navigation, Pagination]" :space-between="10" :loop="true"
+                :autoplay="{ delay: 3000 }" navigation pagination :breakpoints="{
+                    320: { slidesPerView: 1 },
+                    480: { slidesPerView: 2 },
+                    768: { slidesPerView: 3 },
+                    1024: { slidesPerView: 4 },
+                    1280: { slidesPerView: 6 }
+                }" class="w-full">
+                <SwiperSlide v-for="(item, index) in carouselItems" :key="index">
+                    <img :src="item" class="rounded-lg w-full h-[320px] sm:h-[3200px] lg:h-[320px] object-contain"
+                        loading="lazy" />
+                </SwiperSlide>
+            </Swiper>
+        </div>
+
+
     </section>
 </template>
 <script setup>
 import { ref, computed } from 'vue';
+
+import { Swiper, SwiperSlide } from 'swiper/vue'
+import { Autoplay, Navigation, Pagination } from 'swiper/modules'
+
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+const carouselItems = [
+    './image/aboutme/1.jpg',
+    './image/aboutme/2.jpg',
+    './image/aboutme/3.jpg',
+    './image/aboutme/6.jpg',
+    './image/aboutme/7.jpg',
+    './image/aboutme/8.jpg',
+    './image/aboutme/9.jpg',
+    './image/aboutme/10.jpg',
+    './image/aboutme/11.jpg',
+    './image/aboutme/12.jpg',
+    './image/aboutme/13.jpg',
+]
 const education = ref([
     {
         id: 1,
