@@ -161,7 +161,7 @@
             <!-- Scrollable Description -->
             <div class="overflow-y-auto sm:max-h-[50vh] max-h-[30vh]">
               <p
-                class="mt-2 text-sm text-justify sm:text-base"
+                class="mt-2 text-sm text-justify sm:text-base pr-2"
                 v-html="modalProject.description"
               ></p>
             </div>
@@ -227,6 +227,35 @@ const closeZoom = () => {
 const Projects = ref([
   {
     id: 1,
+    category: ["Web Development"],
+    images: [
+      "./image/gymCourt/img1.jpeg",
+      "./image/gymCourt/img2.jpeg",
+      "./image/gymCourt/img3.jpeg",
+      "./image/gymCourt/img4.jpeg",
+      "./image/gymCourt/img5.jpeg",
+      "./image/gymCourt/img6.jpeg",
+      "./image/gymCourt/img7.jpeg",
+      "./image/gymCourt/img8.jpeg",
+      "./image/gymCourt/img9.jpeg",
+      "./image/gymCourt/img10.jpeg",
+      "./image/gymCourt/img11.jpeg",
+      "./image/gymCourt/img12.jpeg",
+      "./image/gymCourt/img13.jpeg",
+      "./image/gymCourt/img14.jpeg",
+      "./image/gymCourt/img15.jpeg",
+      "./image/gymCourt/img16.jpeg",
+      "./image/gymCourt/img17.jpeg",
+    ],
+    title: "Gym & Court Management System",
+    description:
+      '<p class="indent-8">The GymCourt Monitoring System is a complete and practical solution I developed to modernize how gyms and sports facilities operate. It is designed to simplify complex processes by combining convenience for clients with powerful management tools for business owners, resulting in smoother, faster, and more efficient daily operations. </p><p class="indent-8 mt-1">Clients can easily register, book reservations, and pay online for both gym and court services through a user-friendly interface. The system includes a real-time calendar that clearly displays available and unavailable schedules, helping users plan their bookings confidently while preventing overlaps and conflicts.</p><p class="indent-8 mt-1">To further enhance the user experience, the system automatically sends email and SMS notifications for booking confirmations and reminders. It also supports fast and contactless check-ins through QR code scanning, reducing waiting time and improving overall customer flow within the facility.</p><p class="indent-8 mt-1">On the administrative side, the system features a comprehensive dashboard that tracks gym and court usage, along with revenue insights from daily to yearly. This allows business owners to monitor performance trends and make informed decisions. It also includes a gym equipment inventory management module to ensure all equipment is properly tracked, maintained, and accounted for. </p><p class="indent-8 mt-1"> The system offers strong flexibility by allowing administrators to configure operating hours, set service pricing, create different subscription types, and define closed dates such as holidays or special occasions to control booking availability effectively.</p><p class="indent-8 mt-1">In addition, it can generate printable reports and check-in records, making it easier to review operations, analyze data, and maintain well-organized documentation for business and auditing purposes.</p><p class="indent-8 mt-1"> This project reflects my ability to design and develop reliable, user-friendly, and scalable systems that address real-world business challenges, improve customer satisfaction, and support long-term business growth.</p>',
+    technologies: ["Laravel", "React", "Semaphore", "Mailgun"],
+    gitURL: "",
+    webURL: "",
+  },
+  {
+    id: 2,
     category: ["Web Development", "Mobile App"],
     images: [
       "./image/pestmon1.png",
@@ -256,7 +285,7 @@ const Projects = ref([
     webURL: "",
   },
   {
-    id: 2,
+    id: 3,
     category: ["Web Development"],
     images: [
       "./image/AIS3.jpeg",
@@ -272,7 +301,7 @@ const Projects = ref([
     webURL: "",
   },
   {
-    id: 3,
+    id: 4,
     category: ["Web Development"],
     images: ["./image/GIS1.jpeg", "./image/GIS2.jpeg"],
     title: "GeoGraphical Information System",
@@ -283,7 +312,7 @@ const Projects = ref([
     webURL: "",
   },
   {
-    id: 4,
+    id: 5,
     category: ["Excel VBA"],
     images: [
       "./image/DataEntry1.jpeg",
@@ -298,7 +327,7 @@ const Projects = ref([
     webURL: "",
   },
   {
-    id: 5,
+    id: 6,
     category: ["Excel VBA"],
     images: ["./image/ExcelThematicMap1.jpeg", "./image/ExcelThematicMap2.jpeg"],
     title: "Excel Thematic Map",
