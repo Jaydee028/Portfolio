@@ -226,7 +226,26 @@ const closeZoom = () => {
 
 const Projects = ref([
   {
-    id: 1,
+    id: 2,
+    category: ["Excel VBA"],
+    images: [
+      "./image/houseKeeping/hk1.png",
+      "./image/houseKeeping/hk2.png",
+      "./image/houseKeeping/hk3.png",
+      "./image/houseKeeping/hk4.jpeg",
+      "./image/houseKeeping/hk5.jpeg",
+      "./image/houseKeeping/hk6.png",
+      "./image/houseKeeping/hk7.jpeg",
+    ],
+    title: "Housekeeping Checklist Automation System",
+    description:
+      '<p class="indent-8">This project was developed for a European hotel client to improve the efficiency of their housekeeping operations. The client faced challenges in manually organizing room assignments, tracking service requirements, and generating reports from exported Excel data. These manual processes were time-consuming and prone to errors, affecting overall productivity.</p><p class="indent-8 mt-1">To solve this, I created an automated system using Microsoft Excel with VBA. The solution works by utilizing exported Excel data from the client’s existing system, which is then processed to automatically generate a structured list of rooms along with the corresponding housekeeping services required. It also enables easy assignment of housekeeping personnel to each room, ensuring proper and efficient task distribution.</p><p class="indent-8 mt-1">The system includes a reporting feature that provides a summary of operations, such as the number of rooms assigned per staff, estimated working hours, service breakdown, average cleaning time per room, and average workload per personnel. These reports can be printed or sent via email, making them useful for both daily operations and management review. </p><p class="indent-8 mt-1">Additionally, the system generates printable checklists for each housekeeping staff member, improving clarity and accountability. Users can also save the updated Excel file for documentation and future reference. </p><p class="indent-8 mt-1">Overall, this solution reduced manual work, improved task organization, and enhanced reporting accuracy. Due to confidentiality, the name of the hotel is not disclosed, but the project demonstrates a practical and scalable approach to automating hospitality workflows. </p>',
+    technologies: ["EXCEL", "VBA", "EMAIL", "AUTOMATION"],
+    gitURL: "",
+    webURL: "",
+  },
+  {
+    id: 2,
     category: ["Web Development"],
     images: [
       "./image/gymCourt/img1.jpeg",
@@ -255,7 +274,7 @@ const Projects = ref([
     webURL: "",
   },
   {
-    id: 2,
+    id: 3,
     category: ["Web Development", "Mobile App"],
     images: [
       "./image/pestmon1.png",
@@ -285,7 +304,7 @@ const Projects = ref([
     webURL: "",
   },
   {
-    id: 3,
+    id: 4,
     category: ["Web Development"],
     images: [
       "./image/AIS3.jpeg",
@@ -301,7 +320,7 @@ const Projects = ref([
     webURL: "",
   },
   {
-    id: 4,
+    id: 5,
     category: ["Web Development"],
     images: ["./image/GIS1.jpeg", "./image/GIS2.jpeg"],
     title: "GeoGraphical Information System",
@@ -312,7 +331,7 @@ const Projects = ref([
     webURL: "",
   },
   {
-    id: 5,
+    id: 6,
     category: ["Excel VBA"],
     images: [
       "./image/DataEntry1.jpeg",
@@ -327,7 +346,7 @@ const Projects = ref([
     webURL: "",
   },
   {
-    id: 6,
+    id: 7,
     category: ["Excel VBA"],
     images: ["./image/ExcelThematicMap1.jpeg", "./image/ExcelThematicMap2.jpeg"],
     title: "Excel Thematic Map",
