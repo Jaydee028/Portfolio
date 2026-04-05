@@ -40,7 +40,7 @@
             >
               ★
             </span>
-            <span class="pl-1 text-sm text-primary">
+            <span class="sm:pl-1 text-xs sm:text-sm text-primary">
               ({{ ratingLabel(skill.rating) }})
             </span>
           </div>
