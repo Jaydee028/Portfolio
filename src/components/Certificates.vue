@@ -192,6 +192,14 @@ const Certificates = ref([
     description: "University of California, Davis",
     webURL: "https://coursera.org/share/5a5fdac44557c482301874846d1a59ed",
   },
+  {
+    id: 14,
+    certificate: "Others",
+    image: "./certificates/Cert14.jpg",
+    title: "Ethical Hacker Course",
+    description: "CISCO Networking Academy",
+    webURL: "https://www.credly.com/badges/4724a9e0-03ae-4297-a466-ad5acb188958",
+  },
 ]);
 
 const filteredCertificates = computed(() => {
